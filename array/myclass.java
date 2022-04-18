@@ -1,9 +1,25 @@
-// import java.util.Arrays;   
+ 
+import java.util.Scanner;
 public class myclass{
   
     public static void main(String[] args){
-        int arr[]={7,104,3,20,15};
-         int k=3;
+        Scanner sc=new Scanner(System.in);
+
+        // input array size
+        System.out.println("enter the size of array");
+        int n =sc.nextInt();
+        int[] arr=new int[n];
+
+        // enter array element 
+        System.out.println("please enter element in array");
+        for(int i=0; i<n; i++){
+            arr[i]=sc.nextInt();
+        }
+        // enter k'th element  
+         System.out.println("enter k'th element");
+         int k=sc.nextInt();
+
+        //  sort the array
          for(int i=0; i<arr.length; i++){
              for(int j=i+1;  j<arr.length; j++){
                  if(arr[i] > arr[j]){
@@ -13,11 +29,11 @@ public class myclass{
                  }
              }
          }
-        // Arrays.sort(arr);
+        
         for(int i=0; i<arr.length; i++){
          System.out.print(arr[i]+" ");
         }
-        System.out.print("k'th smallest element is "+arr[k+1]);
+        System.out.print("k'th smallest element is "+arr[k-1]);
        
     }
 }
