@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main_container{
+           margin: auto;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           flex-shrink: 0;
+           gap: 10px;
+        }
+        .card {
+            height: 210px;
+            min-width: 20%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        .card > img{
+           margin-left: 70px;
+           margin-top: 10px;
+        }
+        .card > h4{
+            text-align: center;
+           position: relative;
+           top: -25px;    
+        }
+        .card > p{
+            text-align: center;
+            position: relative;
+           top: -40px;
+           color: blue;
+           cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: blueviolet;">Cards</h1>
+    <div id="main_container">
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
